@@ -62,7 +62,7 @@ def main():
     sender = threading.Thread(target=send_loop, daemon=True)
     receiver = threading.Thread(target=read_rssi_loop, daemon=True)
 
-    sender.start()
+    #sender.start()
     receiver.start()
 
     while True:
